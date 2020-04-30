@@ -18,23 +18,19 @@
 
     <body>
         <header>
-            <img src="img/accueil_mobile.jpg" aria-hidden="true"/>
-            <div>
-                <img src="img/logo.png"/>
-                <nav role="navigation">
-                    <div id="menuToggle"> 
-                        <input type="checkbox"/>
-                        <i class="far fa-bars"></i>
-                        <ul id="menu">
-                            <li><a href="#title" onclick="openMenu()">accueil</a></li>
-                            <li><a href="#services" onclick="openMenu()">services</a></li>
-                            <li><a href="#portfolio" onclick="openMenu()">portfolio</a></li>
-                            <li><a href="#contact" onclick="openMenu()">contact</a></li>
-                            <li><a href="#">cv</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <img id="background" src="img/accueil_mobile.jpg" aria-hidden="true"/>
+            <img id="logo" src="img/logo.png"/>
+            <nav id="menutoggle">
+                <i class="far fa-bars"></i>
+                <input type="checkbox" checked="true"/>
+                <ul id="menu">
+                    <li><a href="#title" onclick="closeMenu()">accueil</a></li>
+                    <li><a href="#services" onclick="closeMenu()">services</a></li>
+                    <li><a href="#portfolio" onclick="closeMenu()">portfolio</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">contact</a></li>
+                    <li><a href="#">cv</a></li>
+                </ul>
+            </nav>
         </header>
         <section id="title">
             <h1>Marion Renard</h1>
